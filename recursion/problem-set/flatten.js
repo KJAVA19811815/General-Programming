@@ -1,19 +1,13 @@
 function flatten(arr) {
-    let result = [];
-    if (arr.length === 0) return result;
-
-    function add (arr) {
-        if (arr.length === undefined) {
-            return arr
+    let newArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (Array.isArray(arr[0])) {
+            newArr = newArr.concat(flatten(oldArr[i]))
         } else {
-            return arr[0];
+            newArr.push(oldArr[i])
         }
     }
-
-    console.log(result);
-
-    return result.concat(add(arr.slice(1)));
-  
+    return newArray;
 }
   
   console.log(flatten([1, 2, 3, [4, 5] ])) // [1, 2, 3, 4, 5]
