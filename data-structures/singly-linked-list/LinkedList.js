@@ -149,8 +149,7 @@ class LinkedList {
 
 list = new LinkedList();
 list.push("Karun");
-list.push("GOAT");
-list.push("FOREVER");  
+list.push("GOAT");  
 // console.log(list.shift());
 // console.log(list.shift());
 // console.log(list.push("Dance"));
@@ -160,6 +159,6 @@ list.push("FOREVER");
 // console.log(list.set("1234", 1));
 // console.log(list.insert("Thor", 2));
 // console.log(list.remove(1));
-console.log(list);
-list.reverse();
+// console.log(list);
+// list.reverse();
 console.log(list);
