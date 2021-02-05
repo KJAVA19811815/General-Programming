@@ -114,7 +114,6 @@ class BinarySearchTree {
       if (node.left) traverse(node.left);
       data.push(node.value);      
       if (node.right) traverse(node.right);
-      // data.push(node.value);
     }
     traverse(current);
 
